@@ -1,4 +1,13 @@
-// src/App.jsx
+import { Outlet } from "react-router-dom";
+import { Navbar } from "./components/Navbar.jsx";
+
+import "./app.css";
+
 export const App = () => {
-  return <h1>Oi</h1>;
+  return (
+    <div className="app-conteiner">
+      <Navbar />
+      <Outlet />
+    </div>
+  );
 };
